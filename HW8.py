@@ -6,3 +6,4 @@ output = cv2.adaptiveThreshold(noise_removed_image,255,cv2.ADAPTIVE_THRESH_GAUSS
 plt.figure(figsize=[15,15])
 plt.subplot(121);plt.imshow(original_image, cmap='gray');plt.title("Original");
 plt.subplot(122);plt.imshow(output, cmap='gray');plt.title("Adaptive Gaussian + noise removal");
+cv2.imwrite('images/output_adad.png', output)
